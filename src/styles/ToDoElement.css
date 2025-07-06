@@ -1,0 +1,39 @@
+.ToDoElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    
+    background-color: var(--col1);
+    border: 0.1em dashed var(--col2);
+    color: var(--col3);
+
+    padding: 0.5em;
+}
+.ToDoElement__Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    width: 100%;
+}
+.ToDoElement__Control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    gap: 0.25em;
+}
+.ToDoElement__MarkedDone {
+    background-color: lime;
+    border-color: white;
+}
+.ToDoElement__MarkedDone button {
+    border: 0.1em solid white;
+
+}
+.ToDoElement__MarkedDone button:hover {
+    background-color: lime;
+}

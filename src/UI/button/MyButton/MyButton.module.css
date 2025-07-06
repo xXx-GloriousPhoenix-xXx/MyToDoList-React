@@ -1,0 +1,19 @@
+.MyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.5em;
+    aspect-ratio: 1;
+
+    border: 0.1em solid var(--col4);
+    border-radius: 50%;
+
+    background-color: var(--col3);
+}
+.MyButton:hover {
+    background-color: var(--col4);
+    color: var(--col3);
+    border-color: var(--col3);
+    cursor: pointer;
+}

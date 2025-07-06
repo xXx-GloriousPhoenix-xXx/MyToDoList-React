@@ -1,0 +1,36 @@
+.ToDoList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    gap: 0.5em;
+
+    text-align: center;
+}
+.ToDoList > * {
+    width: 100%;
+}
+.ToDoList > * > * {
+    width: 100%;
+}
+.ToDoList__Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    padding: 0.5em;
+    border: 0.1em dashed var(--col2);
+
+
+    background-color: var(--col1);
+}
+.ToDoList__Body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    gap: 0.5em;
+}
