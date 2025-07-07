@@ -1,0 +1,32 @@
+.MySelect__control {
+    background-color: var(--col2) !important;
+    border: 0.1em solid var(--col3) !important;
+    outline: none !important;
+    box-shadow: none !important;   
+
+    height: 1em !important;
+    font-size: 1em !important;
+}
+.MySelect__control:hover {
+    background-color: var(--col3) !important;
+    border-color: var(--col4) !important;
+}
+.MySelect__placeholder {
+    color: var(--col3) !important;
+}
+.MySelect__control:hover .MySelect__placeholder {
+    color: var(--col4) !important;
+}
+.MySelect__indicator {
+    color: var(--col3) !important;
+}
+.MySelect__control:hover .MySelect__indicator {
+    color: var(--col4) !important;
+}
+.MySelect__indicator-separator {
+    background-color: var(--col3) !important;
+}
+.MySelect__control:hover .MySelect__indicator-separator {
+    background-color: var(--col4) !important;
+}
+

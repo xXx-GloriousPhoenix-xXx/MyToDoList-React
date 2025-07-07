@@ -1,0 +1,12 @@
+.MyInput {
+    background-color: var(--col2);
+    border: 0.1em solid var(--col3);
+    padding: 0.5em;
+    height: 0.5em;
+
+    color: var(--col4);
+
+    border-radius: 0.5em;
+
+    text-align: center;
+}

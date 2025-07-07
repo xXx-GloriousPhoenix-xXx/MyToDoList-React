@@ -4,13 +4,11 @@
 }
 html {
   height: 100%;
-  background-color: var(--col2);
+  background-color: var(--col1);
 }
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-
-  height: 100dvh;
 }

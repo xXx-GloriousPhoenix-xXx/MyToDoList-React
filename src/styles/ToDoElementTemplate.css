@@ -1,0 +1,32 @@
+.ToDoElementTemplate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+    
+    background-color: var(--col2);
+    border: 0.1em dashed var(--col3);
+    color: var(--col4);
+
+    padding: 0.5em;
+
+    gap: 0.5em;
+
+    border-radius: 1em;
+}
+.ToDoElementTemplate__Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    gap: 0.5em;
+}
+.ToDoElementTemplate__Control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    gap: 0.5em;
+}

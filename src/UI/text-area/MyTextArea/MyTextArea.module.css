@@ -1,0 +1,25 @@
+.MyTextArea {
+    all: unset;
+
+    text-align: center;
+
+    padding: 0.25em 0.25em 0.5em 0.25em;
+    height: 0.85em;
+
+    resize: vertical;
+
+    background-color: var(--col2);
+    border: 0.1em solid var(--col3);
+
+    color: var(--col4);
+
+    border-radius: 0.5em;
+
+    width: 10em;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    /* box-sizing: border-box; */
+    max-width: 100%;
+}

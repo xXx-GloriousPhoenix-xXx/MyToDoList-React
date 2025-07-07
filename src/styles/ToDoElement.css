@@ -4,12 +4,32 @@
     align-items: center;
     flex-flow: row nowrap;
     
-    background-color: var(--col1);
-    border: 0.1em dashed var(--col2);
-    color: var(--col3);
+    background-color: var(--col2);
+    border: 0.1em dashed var(--col3);
+    color: var(--col4);
 
     padding: 0.5em;
+
+    border-radius: 1em;
+    
+    gap: 0.5em;
 }
+
+.ToDoElement__MarkedDone {
+    background-color: var(--col3);
+    border-color: var(--col4);
+}
+.ToDoElement__MarkedDone button {
+    background-color: var(--col3);
+    border-color: var(--col4);
+    color: var(--col4);
+}
+.ToDoElement__MarkedDone button:hover {
+    background-color: var(--col4);
+    border-color: var(--col2);
+    color: var(--col2);
+}
+
 .ToDoElement__Content {
     display: flex;
     justify-content: center;
@@ -25,15 +45,4 @@
     flex-flow: column nowrap;
 
     gap: 0.25em;
-}
-.ToDoElement__MarkedDone {
-    background-color: lime;
-    border-color: white;
-}
-.ToDoElement__MarkedDone button {
-    border: 0.1em solid white;
-
-}
-.ToDoElement__MarkedDone button:hover {
-    background-color: lime;
 }

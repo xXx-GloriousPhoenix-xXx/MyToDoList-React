@@ -5,19 +5,15 @@ import { useState } from 'react';
 
 import MyButton from '../UI/button/MyButton/MyButton';
 
-const ToDoElement = ({id, todo, onClickDelete}) => {
-    const [isMarkedDone, setIsMarkedDone] = useState(false);
-    const handleOnClickMarkDone = () => {
-        setIsMarkedDone(!isMarkedDone);
-    }
+const ToDoElement = ({id, todo, onClickMarkDone, onClickDelete}) => {
     return (  
-        <div className={`ToDoElement ${isMarkedDone ? 'ToDoElement__MarkedDone' : ''}`}>
+        <div className={`ToDoElement ${todo.done ? 'ToDoElement__MarkedDone' : ''}`}>
             <div className='ToDoElement__Content'>
                 <strong>{id}. {todo.title}</strong>
                 <p>{todo.description}</p>
             </div>
             <div className='ToDoElement__Control'>
-                <MyButton text='✓' onClick={handleOnClickMarkDone}/>
+                <MyButton text='✓' onClick={onClickMarkDone}/>
                 <MyButton text='✗' onClick={onClickDelete}/>
             </div>
         </div>
