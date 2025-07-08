@@ -29,4 +29,33 @@
 .MySelect__control:hover .MySelect__indicator-separator {
     background-color: var(--col4) !important;
 }
+.MySelect__menu {
+    background-color: transparent !important;
+    color: var(--col3) !important;
+    border-radius: 0.5em !important;
+}
+.MySelect__menu-list {
+    padding: 0 !important;
+}
+.MySelect__option {
+    background-color: var(--col2) !important;
+    color: var(--col3) !important;
 
+    border-width: 0.1em !important;
+    border-style: solid !important;
+    border-color: var(--col2) !important;
+    border-radius: 0.5em;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-wrap: nowrap !important;
+}
+.MySelect__option:hover {
+    background-color: var(--col3) !important;
+    color: var(--col4) !important;
+
+    border-style: solid !important;
+    border-color: var(--col4) !important;
+}

@@ -10,13 +10,12 @@ import MySelect from '../UI/select/MySelect/MySelect';
 
 const ToDoList = () => {
     const initialTodos = [
-        {title: 'Java Script', description: 'Learn JavaScript basics'},
-        {title: 'React', description: 'Learn React basics'},
-        {title: 'Redux', description: 'Learn Redux basics'},
-        {title: 'Node.js', description: 'Learn Node.js basics'},
-        {title: 'Express', description: 'Learn Express basics'}
+        {title: 'a', description: 'd'},
+        {title: 'b', description: 'a'},
+        {title: 'c', description: 'e'},
+        {title: 'd', description: 'c'},
+        {title: 'e', description: 'b'}
     ].map(todo => ({ ...todo, done: false }));
-
     const [todos, setTodos] = useState(initialTodos);
     //default, creating
     const [todoCreationState, setTodoCreationState] = useState('default');
@@ -42,6 +41,23 @@ const ToDoList = () => {
     const handleCancelCreateTodo = () => {
         setTodoCreationState('default');
     }
+    const options = [
+        {value: 'title', label: 'By Title'},
+        {value: 'description', label: 'By Descript ion'},
+        {value: 'done', label: 'By Completion'}
+    ]
+    const [sortingOption, setSortingOption] = useState(options[0]);
+    const sortedTodos = [...todos].sort((a, b) => {
+        if (sortingOption.value === 'done') {
+            return a.done === b.done ? 0 : a.done ? 1 : -1;
+        }
+        else {
+            return a[sortingOption.value].localeCompare(b[sortingOption.value])
+        }
+    });
+    const handleSorting = (newSortingOption) => {
+        setSortingOption(newSortingOption);
+    }
     return (  
         <div className="ToDoList">
             <div className="ToDoList__Header">
@@ -49,12 +65,17 @@ const ToDoList = () => {
                     <strong>To Do List</strong>
                 </div>
                 <div>
-                    <MySelect/>
+                    <MySelect 
+                        options={options}
+                        value={sortingOption}
+                        onChange={sort => handleSorting(sort)}
+                    />
                 </div>
             </div>
             <div className="ToDoList__Body">
                 {
-                    todos.map((todo, index) => (
+                    
+                    sortedTodos.map((todo, index) => (
                         <ToDoElement 
                             key={index} 
                             id={index + 1} 

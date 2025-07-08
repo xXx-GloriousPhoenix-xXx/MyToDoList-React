@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import classes from './MyInput.module.css';
 
 const MyInput = ({ placeholder, value, onChange }) => {
