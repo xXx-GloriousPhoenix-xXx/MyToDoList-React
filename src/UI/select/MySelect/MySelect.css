@@ -6,6 +6,8 @@
 
     height: 1em !important;
     font-size: 1em !important;
+
+    width: 13.2em !important;
 }
 .MySelect__control:hover {
     background-color: var(--col3) !important;

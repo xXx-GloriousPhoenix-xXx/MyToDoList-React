@@ -1,8 +1,6 @@
 import '../styles/ToDoElement.css';
 import '../styles/root.css';
 
-import { useState } from 'react';
-
 import MyButton from '../UI/button/MyButton/MyButton';
 
 const ToDoElement = ({id, todo, onClickMarkDone, onClickDelete}) => {

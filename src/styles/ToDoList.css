@@ -18,9 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 
-    gap: 1em;
+    gap: 0.5em;
 
     padding: 0.5em;
     border: 0.1em dashed var(--col3);
@@ -28,6 +28,9 @@
 
     background-color: var(--col2);
 }
+/* .ToDoList__Header > * {
+    min-width: 12em;
+} */
 .ToDoList__Body {
     display: flex;
     justify-content: center;

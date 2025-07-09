@@ -13,7 +13,12 @@ const ToDoElementTemplate = ({handleOnCreateClick, handleOnCancelClick}) => {
     return (  
         <div className='ToDoElementTemplate'>
             <div className='ToDoElementTemplate__Content'>
-                <MyInput value={title} onChange={(e) => setTitle(e.target.value)} placeholder='Title...'/>
+                <MyInput
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    placeholder='Title...'
+                    additionalStyle={{width: '9.5em'}}
+                />
                 <MyTextArea value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Description...'/>
             </div>
             <div className="ToDoElementTemplate__Control">
